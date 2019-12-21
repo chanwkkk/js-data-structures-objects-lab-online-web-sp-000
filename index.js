@@ -6,8 +6,8 @@ function updateDriverWithKeyAndValue(obj,key,value){
    return newObj
 }
 
-function destructivelyUpdateDriverWithKeyAndValue(){
-
+function destructivelyUpdateDriverWithKeyAndValue(obj,key,value){
+   Object.assign(obj, {{[key]:value}})
 }
 
 function deleteFromDriverByKey(){
